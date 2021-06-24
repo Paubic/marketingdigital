@@ -1,3 +1,13 @@
 /* ********* */
 /* @MIXINS */
 /* ********* */
+
+@mixin fontface ($nombre, $archivo) {
+
+    @font-face {
+
+        font-family: "#{$nombre}", sans-serif;
+        src: url(../assets\font\DejaVuSans-BoldOblique.ttf),
+        src: url(..assets\font\DejaVuSans-ExtraLight.ttf)
+    }
+}

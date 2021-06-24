@@ -1,0 +1,79 @@
+/*Tipografia*/
+/*Index*/
+.banerindex__titulo{
+    font-family: sans-serif; 
+    color: black;
+   grid-column: 1;
+   grid-row: 2;
+
+}
+
+.titulo2{
+    font-family: sans-serif;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+/*Header*/
+
+header{
+
+display:grid;
+grid-template-columns: 40% 40% 20%;
+grid-template-rows: auto auto auto auto auto;
+}
+
+/*imagen header*/
+
+.banerindex{
+
+width:100%;
+display: grid;
+grid-column: 1;
+grid-row: 2/5;
+
+}
+
+/*logo*/
+
+.logo{
+
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/*logo menu*/
+
+.menu{
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/*footer*/
+
+footer{
+
+    background-color: black;
+}
+
+.copy{
+
+    background-color: rgb(161, 153, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*formulario*/
+
+.formulario__contactar{
+
+    color: white;
+}
+
+.boton{
+    background-color: red;
+    color: white;
+}

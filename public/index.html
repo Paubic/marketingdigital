@@ -6,8 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+   
+   <style>
+        /* desaparecer el checkbox */
+        #activar, .desplegable{
+            display: none;
+        }
+        #activar:checked ~ .desplegable{
+            display: block;
+        }
+        </style>
+   
 </head>
 <body>
-    <h1>Hola</h1>
+   <!-- HEADER -->
+   <header>
+    <img class="logo" src="./assets/img/svg/Logo.svg" alt="logo">
+
+    <!--Menu Desplegable-->
+    <input type="checkbox" id="activar">
+    <label for="activar">
+        <img class="menu" src="./assets/img/svg/menu.svg" alt="">
+    </label>
+    <!-- Desplegable -->
+    <section class="desplegable">
+        <ul>
+            <li>Inicio</li>
+            <li>Servicios</li>
+            <li>Proyectos</li>
+        </ul>
+    </section>
+
+    <picture class="banerindex" >
+        <!--Banner-->
+        <!--Smartphone-->
+        <source 
+
+        srcset="
+        ./assets/img/smartphone/Banerinicio.jpg 1x,
+        ./assets/img/smartphone/Banerinicio@2x.jpg 2x,
+        ./assets/img/smartphone/Banerinicio@3x.jpg 3x
+        "
+
+        
+
+        media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+        />
+
+         <!--Deskstop-->
+         <source 
+
+         srcset="./assets/img/desktop/Banerinicio.jpg 1x,
+         ./assets/img/desktop/Banerinicio@2x.jpg 2x,
+         "
+
+         media="(min-width: 1100px)"
+
+         />
+
+         <img class="banner" src="" alt="Banner"/>
+
+         </picture>
+
+         <h1 class="banerindex__titulo">LABORATORIO DE IDEAS</h1>
+         <h2 class="titulo2">AGENCIA DE MARKETING DIGITAL</h2>
+</header>
+<!-- MAIN -->
+<main>
+
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+      <!--metodo get i post-->
+
+      <form class="formulario" action="enviado.html" method="get">
+        <h5 class="formulario__contactar">Contactar</h5>
+        <!--Nombre Completo-->
+
+        <label class="formulario__nombre"></label>
+        <input 
+        type="text" 
+        name="nombre" 
+        placeholder="nombre completo" 
+        pattern="^[A-Za-z] [2,20]$">
+
+        <!--Email-->
+        <label></label>
+        <input 
+        type="text" 
+        name="Email" 
+        required 
+        placeholder="tu email personal">
+
+        <!--Movil-->
+        <label></label>
+        <input 
+        type="text" 
+        placeholder="Movil" 
+        name="Solo Movil">
+
+        <!--Comentario-->
+        <label></label>
+        <textarea 
+        name="Comentario" 
+        placeholder="Comentario"
+        cols="30" 
+        rows="10">
+        </textarea>
+
+        <button class="boton" type="submit">Enviar</button>
+    </form>
+
+    
+    <picture class="footer__mapa" >
+        <!--Banner-->
+        <!--Smartphone-->
+        <source 
+
+        srcset="
+        ./assets/img/smartphone/mapa.jpg 1x,
+        ./assets/img/smartphone/mapa@2x.jpg 2x,
+        ./assets/img/smartphone/mapa@3x.jpg 3x,
+        "
+
+        
+
+        media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+        />
+
+         <!--Deskstop-->
+         <source 
+
+         srcset="./assets/img/smartphone/mapa.jpg 1x,
+         ./assets/img/smartphone/mapa@2x.jpg 2x,
+         "
+
+         media="(min-width: 1100px)"
+
+         />
+
+         <img class="mapa" src="" alt="Banner"/>
+
+         </picture>
+    
+    <h6 class="copy">&copy;Copyright 2021</h6>
+</footer>
 </body>
 </html>
