@@ -7,21 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
    
-   <style>
-        /* desaparecer el checkbox */
-        #activar, .desplegable{
-            display: none;
-        }
-        #activar:checked ~ .desplegable{
-            display: block;
-        }
-        </style>
+  
    
 </head>
 <body>
+
+    <div class="contenedor">
+
+        <style>
+            /* desaparecer el checkbox */
+            #activar, .desplegable{
+                display: none;
+            }
+            #activar:checked ~ .desplegable{
+                display: block;
+            }
+            </style>
    <!-- HEADER -->
    <header>
-    <img class="logo" src="./assets/img/svg/Logo.svg" alt="logo">
+       <a class="logo" href="#">
+    <img  src="./assets/img/svg/Logo.svg" alt="logo">
+</a>
 
     <!--Menu Desplegable-->
     <input type="checkbox" id="activar">
@@ -29,13 +35,13 @@
         <img class="menu" src="./assets/img/svg/menu.svg" alt="">
     </label>
     <!-- Desplegable -->
-    <section class="desplegable">
-        <ul>
-            <li>Inicio</li>
-            <li>Servicios</li>
-            <li>Proyectos</li>
-        </ul>
-    </section>
+    <nav class="desplegable">
+        
+           <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="proyectos.html">Proyectos</a>
+        
+    </nav>
 
     <picture class="banerindex" >
         <!--Banner-->
@@ -61,25 +67,79 @@
          ./assets/img/desktop/Banerinicio@2x.jpg 2x,
          "
 
-         media="(min-width: 1100px)"
+         media="(min-width: 1000px)"
 
          />
 
          <img class="banner" src="" alt="Banner"/>
 
          </picture>
-
+<div class="textoindex">
          <h1 class="banerindex__titulo">LABORATORIO DE IDEAS</h1>
          <h2 class="titulo2">AGENCIA DE MARKETING DIGITAL</h2>
+        </div>
 </header>
 <!-- MAIN -->
-<main>
+<a class="flecha__vector" href="#abajo">
+    <img  src="./assets/img/svg/flecha.svg" alt="logo">
+</a>
+<main id="abajo">
 
+    
+
+    <picture class="banerindex__main" >
+        <!--Banner-->
+        <!--Smartphone-->
+        <source 
+
+        srcset="
+        ./assets/img/smartphone/ordenadormainindex.jpg 1x,
+        ./assets/img/smartphone/ordenadormainindex@2x.jpg 2x,
+        ./assets/img/smartphone/ordenadormainindex@3x.jpg 3x
+        "
+
+        
+
+        media="(min-width: 320px) and (max-width: 475px) and (orientation: portrait)"
+
+        />
+
+         <!--Deskstop-->
+         <source 
+
+         srcset="./assets/img/desktop/ordenadormainindex.jpg 1x,
+         ./assets/img/desktop/ordenadormainindex@2x.jpg 2x,
+         "
+
+         media="(min-width: 1100px)"
+
+         />
+
+         <img class="bannerindex__main" src="" alt="Banner"/>
+
+         </picture>
+
+         <h2 class="titulodos">¿QUIÉNES SOMOS?</h2>
+
+         <p class="textomain">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor arcu auctor rhoncus scelerisque ornare pulvinar diam dictumst. Quis sed est interdum proin lectus lorem adipiscing tincidunt ut. Aliquam pharetra, nunc, scelerisque non urna nec ridiculus. Non mi suspendisse a senectus.</p>
+
+         <div class="componentesmain">
+             <span class="componentesmain__primero">
+         <img class="mainindex__relampago" src="./assets/img/svg/relampagoindex.svg" alt="logo">
+
+         <p class="mainindex__textouno">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+        </span>
+        <span class="componentesmain__segundo">
+         <img class="mainindex__estadistica" src="./assets/img/svg/estadisticaindex.svg" alt="logo">
+
+         <p class="mainindex__textodos">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali</p>
+        </span>
+        </div>
 </main>
 <!-- FOOTER -->
 <footer class="footer">
       <!--metodo get i post-->
-
+<div class="formulariomapa">
       <form class="formulario" action="enviado.html" method="get">
         <h5 class="formulario__contactar">Contactar</h5>
         <!--Nombre Completo-->
@@ -143,15 +203,16 @@
          ./assets/img/smartphone/mapa@2x.jpg 2x,
          "
 
-         media="(min-width: 1100px)"
+         media="(min-width: 1000px)"
 
          />
 
          <img class="mapa" src="" alt="Banner"/>
 
          </picture>
-    
+        </div>
     <h6 class="copy">&copy;Copyright 2021</h6>
 </footer>
+</div>
 </body>
 </html>
